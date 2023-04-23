@@ -37,7 +37,7 @@ async def save_message(client, query):
         await query.answer(f'Start @{client.me.username} in private and try again', show_alert=True)
     except Exception as e:
         LOGGER.error(e)
-        await query.answer("Something went wrong!", show_alert=True)
+        await query.answer("Start @{client.me.username} in private and try again', show_alert=True)
 
 
 bot.add_handler(CallbackQueryHandler(save_message, filters=regex("^save")))

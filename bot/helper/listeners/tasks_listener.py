@@ -374,6 +374,7 @@ class MirrorLeechListener:
                 msg += f'\n<b>Corrupted Files</b>: {mime_type}'
             msg += f'\n<b>#cc</b>: {self.tag}'
             msg += f"\n<b>Upload</b>: {self.extra_details['mode']}\n\n"
+            msg += f"\n<b>Leech Dump</b>: <a href= 'https://t.me/+v0IRa2I0nEs4Yjdl'>Click Here to Join</a> \n\n"
             if not files:
                 await sendMessage(self.message, msg)
                 if self.logMessage:
@@ -457,7 +458,7 @@ class MirrorLeechListener:
                                 buttons.ubutton("🌐 View Link", share_urls)
                 buttons = extra_btns(buttons)
                 if self.dmMessage:
-                    msg += '\n\n<b>Links has been sent in your DM.</b>'
+                    msg += '\n\n<b>Links has been sent in your DM. And in <a href="https://t.me/+r_gEnHzGUAQyZWY1">Mirror Dump</a></b>'
                     await sendMessage(self.message, msg)
                     await sendMessage(self.dmMessage, msg, buttons.build_menu(2))
                 else:
