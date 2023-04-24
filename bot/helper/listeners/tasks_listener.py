@@ -386,7 +386,7 @@ class MirrorLeechListener:
                 if self.logMessage:
                     await sendMessage(self.logMessage, msg)
             else:
-                fmsg = '\n<b>Leech Dump</b>: <a href= "https://t.me/+v0IRa2I0nEs4Yjdl">Click Here to Join</a>'
+                fmsg = ''
                 buttons = ButtonMaker()
                 buttons = extra_btns(buttons)
                 if self.isSuperGroup and not self.message.chat.has_protected_content:
